@@ -7,7 +7,6 @@
 }: {
   imports = [
     ../shared/aerospace.nix
-    ../shared/yabai.nix
     ../shared/skhd.nix
     ../shared/brew.nix
     ../shared/system.nix
@@ -15,18 +14,18 @@
   ];
 
   system.stateVersion = 5;
-  system.primaryUser = "kevin";
+  system.primaryUser = "S.Langehaneberg";
 
   ids.gids.nixbld = 30000;
 
-  users.users.kevin = {
-    home = "/Users/kevin";
+  users.users."S.Langehaneberg" = {
+    home = "/Users/S.Langehaneberg";
     shell = "${pkgs.fish}/bin/fish";
   };
 
-  home-manager.users.kevin = {
+  home-manager.users."S.Langehaneberg" = {
     imports = [
-      ../../home/phobos.nix
+      ../../home/charmander.nix
     ];
   };
 
@@ -55,7 +54,7 @@
   time.timeZone = "Europe/Berlin";
 
   nix.settings = {
-    trusted-users = [ "root" "kevin" ];
+    trusted-users = [ "root" "S.Langehaneberg" ];
     trusted-substituters = [
       "https://cachix.cachix.org"
       "https://nixpkgs.cachix.org"
