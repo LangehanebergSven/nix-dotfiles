@@ -3,6 +3,16 @@
 , ...
 }: {
 
+  imports = [
+    ./features/shell
+    ./features/packages
+    ./features/git
+    ./features/tmux
+    ./features/go
+    ./features/php
+  ];
+
+
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.

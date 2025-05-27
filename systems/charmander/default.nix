@@ -29,16 +29,6 @@
     ];
   };
 
-
-  nix.gc = {
-    automatic = true;
-    options = "--delete-older-than 2d";
-    interval = {
-      Hour = 5;
-      Minute = 0;
-    };
-  };
-
   environment.systemPackages = with pkgs; [
     raycast
   ];
@@ -52,6 +42,8 @@
   documentation.man.enable = false;
 
   time.timeZone = "Europe/Berlin";
+
+  nix.enable = false;
 
   nix.settings = {
     trusted-users = [ "root" "S.Langehaneberg" ];
