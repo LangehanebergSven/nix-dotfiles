@@ -22,12 +22,12 @@
       default-root-container-orientation = "auto";
 
       gaps = {
-        outer.bottom = 10;
-        outer.top = 10;
-        outer.left = 10;
-        outer.right = 10;
-        inner.horizontal = 10;
-        inner.vertical = 10;
+        outer.bottom = 1;
+        outer.top = 1;
+        outer.left = 1;
+        outer.right = 1;
+        inner.horizontal = 1;
+        inner.vertical = 1;
       };
 
       key-mapping.preset = "qwerty";
